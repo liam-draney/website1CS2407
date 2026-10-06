@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dutchtown</title>
+  <link href="styles.css" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <script src="script.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+  <div class="top">
+    <header>
+      <div class="logo">Dutchtown</div>
+      <div>
+        <a href="#history">History</a>
+        <a href="#photos">Photos</a>
+        <a href="#stats">Statistics</a>
+        <a href="#feedback" class="cta">Feedback</a>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="eyebrow">South City, St. Louis</div>
+      <h1>Dutchtown</h1>
+      <p>Discover why Dutchtown is the most populated neighborhood in South St. Louis.</p>
+
+      <a href="#history" class="cta">Explore the neighborhood</a>
+    </section>
+  </div>
+
+  <section class="history" id="history">
+    <div class="info">
+      <h2>The Start</h2>
+      <p>The area now called Dutchtown was first occupied by German settlers who moved south of Downtown St. Louis in
+        the early 19th century. The name Dutchtown is derived from Deutch meaning German. Dutchtown is home to over
+        15,000 residents and is St. Louis's densest neighborhood; this is attributed to the packed blocks full of old
+        brick German homes. Dutchtown has changed drastically over the past two hundred years, but it is still a beloved
+        neighborhood.</p>
+
+      <ul>
+        <li>
+          <div class="check">1870</div>City of St. Louis annexed the area; carving out parts of both St. Louis Commons
+          and Carondelet towns into the Dutchtown neighborhood. The start of urban expansion.
+        </li>
+        <li>
+          <div class="check">1900</div>The height of construction for Dutchtown. The majority of the dense Germanic
+          brick homes are built around the turn of the century.
+        </li>
+        <li>
+          <div class="check">1985</div>Population shift began to occur with white flight; mass exodus of white
+          residents out of the neighborhood. However, Black, Latino, Vietnamese, and Nepali families moved in.
+        </li>
+        <li>
+          <div class="check">1993</div>Bosnian refugees moved in great numbers to South St. Louis, with Dutchtown's
+          neighbor Bevo Mill nicknamed as Little Bosnia.
+        </li>
+        <li>
+          <div class="check">1994</div>Violent crime began to really pick up in the neighborhood with high profile
+          shootings occuring frequently. The 90's is when my family moved into Dutchtown.
+        </li>
+        <li>
+          <div class="check">2000</div>Housing vacancies began to rise. 18.8% of homes sat empty at turn of the
+          millennium, with 1,589 units empty. This problem only got worse as the 2000s progressed.
+        </li>
+      </ul>
+    </div>
+
+
+    <img src="Detail-of-Plate-31.webp" alt="Compton and Drys Pictorial St. Louis, 1876, Library of Congress">
+  </section>
+
+  <section class="etn" id="photos">
+    <h2>Explore the Neighborhood</h2>
+
+    <div class="gallery"></div>
+
+
+  </section>
+
+  <section class="stats" id="stats">
+    <h2>Multiculturalism & Population</h2>
+    <p>While St. Louis is known as a Black and White city, South City has a diverse group of residents. Dutchtown is no
+      exception. Dutchtown is primarily black, but has a sizeable Arab population. South Grand in Dutchtown has many
+      Arab stores, and just north of Dutchtown is St. Louis's mexican area of Cherokee Street. St. Louis City's reported
+      statistics are not in-depth, but the following tables showcase Dutchtown's distinct population.</p>
+    <div class="side">
+      <div class="chart"><canvas id="myChart"></canvas></div>
+      <div class="table">
+        <table>
+          <tr>
+            <th>Year</th>
+            <th>Dutchtown Population</th>
+            <th>St. Louis City Population</th>
+            <th>Context</th>
+          </tr>
+          <tr>
+            <td>1990</td>
+            <td>17,943</td>
+            <td>396,685</td>
+            <td>First year neighborhood census data tracked.</td>
+          </tr>
+          <tr>
+            <td>2000</td>
+            <td>17,222</td>
+            <td>348,189</td>
+            <td>New immigrants fill white flight void, but overall population lost.</td>
+          </tr>
+          <tr>
+            <td>2010</td>
+            <td>15,770</td>
+            <td>319,294</td>
+            <td>Dutchtown declines at a slower rate than the rest of St. Louis.</td>
+          </tr>
+          <tr>
+            <td>2020</td>
+            <td>15,356</td>
+            <td>301,578</td>
+            <td>Dutchtown still remains the second most populated neighborhood.</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </section>
+  <section class="bad">
+    <h2>The Other Side</h2>
+    <div class="OStop">
+      <button id="truthB" class="btn">A Sad Fact</button>
+      <p id="truthT" class="hide">Dutchtown recorded the most murders in St. Louis last year.</p>
+    </div>
+    <p class="small">Dutchtown suffers with high rates of crime. Most residents say not to walk at night and to take
+      valuables out of
+      cars. While historically property crime was the worst, violent crime and drugs are on a rise in Dutchtown. This
+      neighborhood was home to a group called the 55Boyz, one of the largest drug gangs in St. Louis history. In 2024
+      the FBI and other law enforcement locked up the top members of this group including Jizzle Buckz from by St.
+      Mary's High
+      School, and KMurda DaSteppa from Keokuk St. Crime across St. Louis has gone down, but struggle in Dutchtown
+      remains. Dutchtown is widely considered the most dangerous neighborhood in St. Louis outside of North City.</p>
+  </section>
+  <footer class="getInvolved">
+    <h2>Get Involved</h2>
+    <div class="involved">
+      <div class="infoGI">
+        <p>While crime and vacancies are a plaguing issue in Dutchtown, there are many people who see the positives.
+          DUTCHTOWNSTL.ORG is a fantastic group, aimed at improving the Dutchtown neighborhood. They frequently host
+          events
+          to help the community.</p>
+        <button><a href="https://dutchtownstl.org/">Check Them Out</a></button>
+      </div>
+      <h2>Please Give Us Feedback</h2>
+      <form id="feedback">
+        <div class="form">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name">
+        </div>
+        <div class="form">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email">
+        </div>
+        <div class="form">
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone">
+        </div>
+        <button type="submit">Submit</button>
+
+      </form>
+    </div>
+  </footer>
+</body>
+
+</html>
